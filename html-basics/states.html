@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            :root {
+                --main-color: #fcee20;
+            }
+
+            input:required{
+                border: 1px solid red;
+            }
+            input[placeholder~="Name"]{
+                border: 1px solid wheat;
+            }
+
+            a:visited {
+                color:purple;
+            }
+            a:hover {
+                color:teal;
+            }
+            a:focus {
+                color:turquoise;
+            }
+
+            form {
+                border: 1px solid blue;
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            form:focus-within { 
+                border-color:seagreen;
+            }
+
+            form:hover input:focus {
+                background-color: sienna;
+            }
+            p {
+                color: rgb(3, 244, 3);
+            }
+            a {
+                color: var(--main-color);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <a href = "https://samsung.com">Samsung</a>
+        </div>
+        <div>
+            <p>면허 씨발</p>
+        </div>
+        <div>
+            <form>
+                <input type="text" placeholder="First Name"/>
+                <input type="text" placeholder="Last Name"/>
+                <input type="text" required placeholder="password"/>
+            </form>
+            <button>Submit</button>
+        </div>
+    </body>
+</html>

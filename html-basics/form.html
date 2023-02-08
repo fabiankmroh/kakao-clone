@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            input:required{
+                border: 1px solid red;
+            }
+            input[placeholder~="Name"]{
+                border: 1px solid wheat;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <form>
+                <input type="text" placeholder="First Name"/>
+                <input type="text" placeholder="Last Name"/>
+                <input type="text" required placeholder="password"/>
+            </form>
+        </div>
+    </body>
+</html>
